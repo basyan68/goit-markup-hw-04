@@ -35,9 +35,8 @@ p,
 ul{
     margin: 0;
 }
-.img {
+img {
     display: block;
-    margin: 0;
 }
 .link{
     text-decoration: none;
@@ -73,7 +72,7 @@ ul{
 .conteiner-page{
     width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 32px 15px;
     display: flex;
     align-items: center; 
 }
@@ -85,11 +84,12 @@ ul{
 .main-nav{
     display: flex;
     align-items: center; 
+    /* padding: 32px 0; */
 }
-.nav-header{
+.nav-header {
     display: flex;
     margin-left: 93px;
-    padding: 32px 0;
+    
 }
 .nav-header .item + .item{
     margin-left: 50px;
@@ -292,6 +292,7 @@ ul{
 .work-spisok{
     display: flex;
 }
+
 .work-spisok .item + .item{
     margin-left: 30px;
 }
@@ -325,7 +326,6 @@ ul{
     color: var(--title-text-color);
     font-style: normal;
     margin-bottom: 9px;
-    margin-top: 20px;
 }
 .web{
     font-family: Raleway;
@@ -333,6 +333,7 @@ ul{
     font-size: 26px;
     line-height: 1.20;
     color: var(--acent-color);
+    display: inline-block;
 }
 .studio{
     font-family: Raleway;
@@ -340,16 +341,27 @@ ul{
     font-size: 26px;
     line-height: 1.20;
     color: var(--title-text-color);
+    display: inline-block;
+}
+.footer-contacts{
+    margin-top: 20px;
 }
 .footer-contacts li{
     margin-bottom: 9px;
 }
+.footer-contacts li:nth-child(2n){
+    margin-bottom: 0;
+}
+
 .footer-contacts .link{
     font-size: 14px;
     line-height: 1.70;
     font-weight: normal;
     color: var(--contacts-acent-footer);
     font-style: normal;
+}
+.footer-contacts li{
+    display: flex;
 }
 
     /* Portfolio */
@@ -376,7 +388,8 @@ ul{
     cursor: pointer;
     background-color: var(--background-color-team);
     border-radius: 4px;
-    padding: 6px 22px;   
+    padding: 6px 22px;  
+    border: none; 
 }
 .active-button {
     background-color: var(--acent-color);
@@ -397,10 +410,10 @@ ul{
 .item-spisok{
     width: 370px;
     margin-bottom: 30px;
-    border: 1px solid var(--card-portfolio);
+    /* border: 1px solid var(--card-portfolio); */
     margin-right: 30px;
-    background: #FFFFFF;
-    box-sizing: border-box;
+    background-color: var(--title-text-color);
+    /* box-sizing: border-box; */
 }
 .item-spisok:nth-child(3n){
     margin-right: 0;
@@ -416,10 +429,9 @@ ul{
 }
 .card-spisok-padding{
     padding: 20px 24px;
-    /* border: 1px solid var(--card-portfolio); */
-    /* border-left: 1px solid var(--card-portfolio); 
-    border-right: 1px solid var(--card-portfolio); */
-    
+    border-bottom: 1px solid var(--card-portfolio); 
+    border-left: 1px solid var(--card-portfolio);  
+    border-right: 1px solid var(--card-portfolio);
 }
 
 .item-spisok .hero-portfolio-title{
