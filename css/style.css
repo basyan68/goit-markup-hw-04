@@ -245,6 +245,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 .advantage-spisok-icon{
     width: 270px;
@@ -256,9 +257,7 @@ img {
     justify-content: center;
     align-items: center;
 }
-.advantage-spisok-icon + .advantage-spisok-icon{
-    margin-left: 30px;
-}
+
 .advantage-spisok{
     display: flex;
     
@@ -359,6 +358,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    
 }
 .item-icon-clients{
     width: 170px;
@@ -369,25 +370,25 @@ img {
     padding: 16px 32px;
     fill:#AFB1B8 ;
 }
-.item-icon-clients + .item-icon-clients{
-    margin-left: 30px;
-}
 .item-icon-clients:hover{
     fill: #2196F3;
     border: 1px solid #2196F3;
     box-sizing: border-box;
     border-radius: 4px;
 }
+.spisok-clients li{
+    display: flex;
+}
+
 
 /* fotter-section */
 .footer-section{
     background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
-    align-items: baseline;
-    /* margin-right: auto;
-    margin-left: auto; */
+    
+    margin-right: auto;
+    margin-left: auto;
 }
 .footer-paragraf{
     color: var(--title-text-color);
@@ -430,8 +431,14 @@ img {
 .conteiner-footer-logo{
     /* margin-right: 70px; */
     /* margin-left: 206px; */
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
 }
 .footer-container{
+    margin-left: 70px;
 }
 .title-footer{
     font-weight: 700;
@@ -439,6 +446,8 @@ img {
     line-height: 1.15px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 20px;
+    
 }
 .footer-contacts li{
     display: flex;
@@ -449,9 +458,8 @@ img {
     height: 44px;
     justify-content: space-between;
     align-items: center;
-    /* margin: 0 auto;
-    padding: 0; */
-    fill: #FFFFFF;
+    margin: 0 auto;
+    padding: 0;
 }
 .icon-footer-link{
     display: block;
@@ -459,6 +467,7 @@ img {
     height:44px;  
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
 }
 .icon-footer{
     width: 20px;
@@ -564,12 +573,13 @@ img {
     align-items: center;
     margin: 0 auto;
     padding: 0;
-    fill: #AFB1B8;
+    
 }
 .item-icon-link{
     display: block;
     width:44px;
     height:44px;    
+    fill: #AFB1B8;
 }
 
 .item-icon-link:hover{
@@ -582,4 +592,5 @@ img {
     width: 20px;
     height: 20px;
     margin: 12px;
+    
 }
